@@ -6,7 +6,7 @@ console.log(x);
 
 (async function translatePage(targetLanguage = "Spanish") {
   // 1. Load Puter.js dynamically if not already present
-  if (!window.puter) {
+  if (!window.puter && x==="English") {
     await new Promise((resolve, reject) => {
       const script = document.createElement("script");
       script.src = "https://js.puter.com/v2/";
